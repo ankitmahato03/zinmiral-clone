@@ -44,9 +44,11 @@ const Home = () => {
       </h2>
 
       <div className="flex flex-col justify-center items-center mt-10 gap-6 px-4">
-        <Button className="bg-[#FEFF00] h-12 hover:bg-[#ffff00cc] px-6 py-4 rounded-sm text-black text-[16px] sm:text-[18px] md:text-[20px] leading-[20px] font-bold">
-          Book a Strategy Call
-        </Button>
+        <a href="/Contact" target="_self">
+          <Button className="bg-[#FEFF00] h-12 hover:bg-[#ffff00cc] px-6 py-4 rounded-sm text-black text-[16px] sm:text-[18px] md:text-[20px] leading-[20px] font-bold">
+            Book a Strategy Call
+          </Button>
+        </a>
 
         <h3 className="mt-5 text-center text-[16px] sm:text-[18px]">
           Our Performance Marketing Services are Certified by
