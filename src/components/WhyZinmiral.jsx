@@ -1,4 +1,3 @@
-
 const WhyZinmiral = () => {
   return (
     <section id="why-zinmiral" className="mt-12">
@@ -36,6 +35,6 @@ const WhyZinmiral = () => {
       </div>
     </section>
   );
-}
+};
 
-export default WhyZinmiral
+export default WhyZinmiral;

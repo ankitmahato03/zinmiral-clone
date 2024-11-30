@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="flex items-center justify-center min-h-screen space-y-6 lg:space-y-0"
+      className="flex items-center justify-center h-[calc(100vh-20px)] pb-4 lg:pb-0 space-y-6 lg:space-y-0"
     >
       <form
         name="submit-to-google-sheet"
@@ -42,4 +42,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

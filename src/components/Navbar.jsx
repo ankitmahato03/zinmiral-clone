@@ -60,7 +60,17 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <Button className="font-semibold text-xl">Chat Now</Button>
+          <Button
+            className="font-semibold text-xl"
+            onClick={() =>
+              window.open(
+                "https://api.whatsapp.com/send?phone=919102234044&text=I%20want%20to%20book%20a%20strategy%20call",
+                "_blank"
+              )
+            }
+          >
+            Chat Now
+          </Button>
         </div>
 
         {/* Mobile Menu Toggle */}
