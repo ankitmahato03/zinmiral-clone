@@ -1,14 +1,30 @@
+import { useToast } from "@/hooks/use-toast";
 import React from "react";
 
 const Contact = () => {
+  const { toast } = useToast();
+
+  const handelForm = (e) => {
+    e.preventDefault();
+    toast({
+      title: "submitted Successfully We get back to you Sortly",
+      duration: 2500,
+      variant: "destructive",
+    });
+  };
+
   return (
     <div
       id="Contact"
-      className="flex items-center justify-center h-[calc(100vh-20px)] pb-4 lg:pb-0 space-y-6 lg:space-y-0"
+      className="flex flex-col items-center justify-center h-[calc(100vh-20px)] mt-12 lg:pb-0 space-y-6 lg:space-y-0"
     >
+      <h1 className="text-black text-center text-[36px] sm:text-[44px] lg:text-[52px] font-bold leading-[42px] sm:leading-[52px] lg:leading-[62px] mb-12">
+        Contact Us
+      </h1>
       <form
         name="submit-to-google-sheet"
         className="w-full max-w-2xl bg-white dark:bg-gray-800 p-8 rounded-md shadow-md"
+        onSubmit={handelForm}
       >
         <input
           type="text"
