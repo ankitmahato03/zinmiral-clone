@@ -18,11 +18,13 @@ const IconMap = {
 
 const Footer = () => {
   return (
-    <footer className="mt-12 py-4 flex flex-col md:flex-row gap-4 justify-between items-center">
+    <footer className="mt-2 py-4 flex flex-col md:flex-row gap-4 justify-between items-center border-t-2 border-black">
       <p>
         © 2024 Zinmiral All Rights Reserved. |{" "}
         <span>
-          <a href="#" className="text-blue-400">Privacy Policy</a>
+          <a href="#" className="text-blue-400">
+            Privacy Policy
+          </a>
         </span>
       </p>
       <div className="flex gap-2">

@@ -1,3 +1,12 @@
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "./ui/table";
+
 const WhyZinmiral = () => {
   return (
     <section id="why-zinmiral" className="mt-12">
@@ -9,7 +18,7 @@ const WhyZinmiral = () => {
           Zinmiral v/s Others
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 w-full max-w-3xl mx-auto">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 w-full max-w-3xl mx-auto">
           <div className="p-6">
             <h3 className="text-xl font-semibold text-blue-800 mb-4">
               Zinmiral
@@ -31,7 +40,34 @@ const WhyZinmiral = () => {
               <li>No prompt answers</li>
             </ul>
           </div>
-        </div>
+        </div> */}
+
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead>Zinmiral</TableHead>
+              <TableHead>Others</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow>
+              <TableCell>Faster and quick responses</TableCell>
+              <TableCell>Longer turnaround time</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Ethical Approach</TableCell>
+              <TableCell>Mediocre methods</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Accurate Reporting</TableCell>
+              <TableCell>Lack of timely reporting</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Precise Resolutions</TableCell>
+              <TableCell>No prompt answers</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
       </div>
     </section>
   );
