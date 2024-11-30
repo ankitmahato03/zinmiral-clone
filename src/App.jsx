@@ -1,3 +1,4 @@
+import Contact from "./components/Contact";
 import Faq from "./components/FAQ";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -15,6 +16,7 @@ function App() {
       <Onboarding />
       <WhyZinmiral />
       <Faq />
+      <Contact />
       <Footer />
     </div>
   );
