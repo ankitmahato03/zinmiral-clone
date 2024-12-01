@@ -18,56 +18,54 @@ const WhyZinmiral = () => {
           Zinmiral v/s Others
         </p>
 
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 w-full max-w-3xl mx-auto">
-          <div className="p-6">
-            <h3 className="text-xl font-semibold text-blue-800 mb-4">
-              Zinmiral
-            </h3>
-            <ul className="text-left text-gray-700 space-y-3 list-disc font-bold text-xl">
-              <li>Faster and quick responses</li>
-              <li>Ethical Approach</li>
-              <li>Accurate Reporting</li>
-              <li>Precise Resolutions</li>
-            </ul>
-          </div>
-
-          <div className="p-6">
-            <h3 className="text-xl font-semibold mb-4">Others</h3>
-            <ul className="text-left text-gray-700 space-y-3 font-normal">
-              <li>Longer turnaround time</li>
-              <li>Mediocre methods</li>
-              <li>Lack of timely reporting</li>
-              <li>No prompt answers</li>
-            </ul>
-          </div>
-        </div> */}
-
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead>Zinmiral</TableHead>
-              <TableHead>Others</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            <TableRow>
-              <TableCell>Faster and quick responses</TableCell>
-              <TableCell>Longer turnaround time</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Ethical Approach</TableCell>
-              <TableCell>Mediocre methods</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Accurate Reporting</TableCell>
-              <TableCell>Lack of timely reporting</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Precise Resolutions</TableCell>
-              <TableCell>No prompt answers</TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
+        <div className="overflow-x-auto w-full container mx-auto max-w-2xl">
+          <Table className="w-full text-center text-sm sm:text-base border-collapse border border-gray-300">
+            <TableHeader>
+              <TableRow className="bg-gray-100">
+                <TableHead className="px-4 py-3 font-semibold text-gray-700 border border-gray-300 text-center">
+                  Zinmiral
+                </TableHead>
+                <TableHead className="px-4 py-3 font-semibold text-gray-700 border border-gray-300 text-center">
+                  Others
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow className="hover:bg-gray-50">
+                <TableCell className="px-4 py-3 font-semibold text-gray-600 border border-gray-300">
+                  Faster and quick responses
+                </TableCell>
+                <TableCell className="px-4 py-3 text-gray-600 border border-gray-300">
+                  Longer turnaround time
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-gray-50">
+                <TableCell className="px-4 py-3 font-semibold text-gray-600 border border-gray-300">
+                  Ethical Approach
+                </TableCell>
+                <TableCell className="px-4 py-3 text-gray-600 border border-gray-300">
+                  Mediocre methods
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-gray-50">
+                <TableCell className="px-4 py-3 font-semibold text-gray-600 border border-gray-300">
+                  Accurate Reporting
+                </TableCell>
+                <TableCell className="px-4 py-3 text-gray-600 border border-gray-300">
+                  Lack of timely reporting
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-gray-50">
+                <TableCell className="px-4 py-3 font-semibold text-gray-600 border border-gray-300">
+                  Precise Resolutions
+                </TableCell>
+                <TableCell className="px-4 py-3 text-gray-600 border border-gray-300">
+                  No prompt answers
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </div>
       </div>
     </section>
   );
