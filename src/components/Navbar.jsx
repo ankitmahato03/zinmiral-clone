@@ -34,7 +34,7 @@ const Navbar = () => {
           : "text-black dark:text-white"
       }`}
     >
-      <nav className="container mx-auto flex justify-between items-center p-2 lg:px-48">
+      <nav className="container mx-auto flex justify-between items-center px-2 lg:px-48">
         {/* Logo Section */}
         <div className="flex-shrink-0">
           <a href="/">
