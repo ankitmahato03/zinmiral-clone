@@ -19,47 +19,47 @@ const WhyZinmiral = () => {
         </p>
 
         <div className="overflow-x-auto w-full container mx-auto max-w-2xl">
-          <Table className="w-full text-center text-sm sm:text-base border-collapse border border-gray-300">
+          <Table className="w-full text-center text-sm sm:text-base border-collapse">
             <TableHeader>
               <TableRow className="bg-gray-100">
-                <TableHead className="px-4 py-3 font-semibold text-gray-700 border border-gray-300 text-center">
+                <TableHead className="px-4 py-3 font-semibold text-gray-700 text-center">
                   Zinmiral
                 </TableHead>
-                <TableHead className="px-4 py-3 font-semibold text-gray-700 border border-gray-300 text-center">
+                <TableHead className="px-4 py-3 font-semibold text-gray-700 text-center">
                   Others
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow className="hover:bg-gray-50">
-                <TableCell className="px-4 py-3 font-semibold text-gray-600 border border-gray-300">
+                <TableCell className="px-4 py-3 font-semibold text-gray-600">
                   Faster and quick responses
                 </TableCell>
-                <TableCell className="px-4 py-3 text-gray-600 border border-gray-300">
+                <TableCell className="px-4 py-3 text-gray-600">
                   Longer turnaround time
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-gray-50">
-                <TableCell className="px-4 py-3 font-semibold text-gray-600 border border-gray-300">
+                <TableCell className="px-4 py-3 font-semibold text-gray-600">
                   Ethical Approach
                 </TableCell>
-                <TableCell className="px-4 py-3 text-gray-600 border border-gray-300">
+                <TableCell className="px-4 py-3 text-gray-600">
                   Mediocre methods
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-gray-50">
-                <TableCell className="px-4 py-3 font-semibold text-gray-600 border border-gray-300">
+                <TableCell className="px-4 py-3 font-semibold text-gray-600">
                   Accurate Reporting
                 </TableCell>
-                <TableCell className="px-4 py-3 text-gray-600 border border-gray-300">
+                <TableCell className="px-4 py-3 text-gray-600">
                   Lack of timely reporting
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-gray-50">
-                <TableCell className="px-4 py-3 font-semibold text-gray-600 border border-gray-300">
+                <TableCell className="px-4 py-3 font-semibold text-gray-600">
                   Precise Resolutions
                 </TableCell>
-                <TableCell className="px-4 py-3 text-gray-600 border border-gray-300">
+                <TableCell className="px-4 py-3 text-gray-600">
                   No prompt answers
                 </TableCell>
               </TableRow>

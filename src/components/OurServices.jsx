@@ -1,21 +1,25 @@
 import { Badge } from "./ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Smartphone, Target, Globe } from "lucide-react";
 
 const services = [
   {
     title: "Social Media Management",
     description:
       "Achieve social success without lifting a finger! While you dive into your favorite podcasts, we&apos;ll make sure your brand stands out on all platforms.",
+    icon: Smartphone,
   },
   {
     title: "Meta Ads & Google Ads",
     description:
       "Optimize Your Ads For More Profit. We will help you to get more profit from your ads. We will help you to get more profit from your ads.",
+    icon: Target,
   },
   {
     title: "Website Development",
     description:
       "We specialize in creating user-friendly, responsive WordPress websites that provide a seamless experience across all devices, ensuring easy navigation and accessibility for all users.",
+    icon: Globe,
   },
 ];
 
@@ -29,21 +33,23 @@ const OurServices = () => {
       </h1>
 
       {/* Services Overview */}
-      <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center"
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
         {services.map((service, index) => (
           <Card
             key={index}
-            className="hover:scale-105 transition-all w-full max-w-[350px] mx-auto bg-gray-100"
+            className="group hover:shadow-2xl transition-all duration-300 ease-in-out min-h-[300px] w-full max-w-sm mx-auto"
           >
-            <CardHeader>
-              <CardTitle className="font-bold text-[22px] sm:text-[26px] lg:text-[30px] leading-[30px] sm:leading-[35px] lg:leading-[39px]">
+            <CardHeader className="relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#F8C3F8] to-secondary opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <service.icon className="relative z-10 w-12 h-12 text-black mb-4" />
+              <CardTitle className="relative z-10 text-black">
                 {service.title}
               </CardTitle>
             </CardHeader>
-            <CardContent className="text-[16px] sm:text-[18px] text-gray-700 mt-2">
-              {service.description}
+            <CardContent className="mt-4 flex flex-col justify-between h-full">
+              <CardDescription className="text-muted-foreground mb-4">
+                {service.description}
+              </CardDescription>
             </CardContent>
           </Card>
         ))}
